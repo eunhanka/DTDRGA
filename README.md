@@ -6,7 +6,7 @@ Code and data for the paper:
 
 > **E. Ka and S. V. Ukkusuri**, "Day-to-Day Traffic Dynamics under Route-Guidance
 > Misinformation: Trust Evolution, Behavioral Heterogeneity, and Network Resilience,"
-> *IEEE Transactions on Intelligent Transportation Systems*, 2026.
+> *IEEE Transactions on Intelligent Transportation Systems*, 2026. (Under review)
 
 ## Overview
 
@@ -19,29 +19,10 @@ LWR kinematic wave network loading.
 ## Key Features
 
 - **Coupled DTD-Trust dynamics**: Beta-distributed trust evolving with traffic flows
-- **Multi-class heterogeneity**: CAV, App-dependent, and Experience-based drivers
-- **Dual attack scenarios**: Recommendation-layer compromise (Scenario I) and
-  data-plane Sybil poisoning (Scenario II)
+- **Multi-class heterogeneity**: CAV, App-dependent, and Experience-based driver classes
+- **Dual attack scenarios**: Recommendation-layer compromise (Scenario I) and data-plane Sybil poisoning (Scenario II)
 - **LWR network loading**: Newell's simplified N-curve propagation
-- **Theoretical analysis**: Equilibrium existence, stability bounds, recovery dynamics
-
-## Quick Start
-
-```bash
-# Clone repository
-git clone https://github.com/EunhanKa/DTD-Trust-Resilience.git
-cd DTD-Trust-Resilience
-
-# Create conda environment
-conda env create -f environment.yml
-conda activate dtd
-
-# Run all experiments (~24h on 8-core machine)
-python experiments/run_all.py
-
-# Or generate figures from pre-computed results
-python figures/generate_all.py
-```
+- **Theoretical analysis**: Equilibrium existence, stability bounds, recovery dynamics (C1–C4)
 
 ## Repository Structure
 
@@ -69,41 +50,28 @@ python figures/generate_all.py
 | `src/utils/metrics.py` | PoAtt, TIA, trust recovery computation |
 | `src/utils/network_loader.py` | Unified network loader |
 
-## Reproducing Paper Results
+## Quick Start
 
-### From pre-computed results (fast, ~5 min)
 ```bash
+# Clone repository
+git clone https://github.com/EunhanKa/DTDRGA.git
+cd DTDRGA
+
+# Create conda environment
+conda env create -f environment.yml
+conda activate dtd
+
+# Run all experiments
+python experiments/run_all.py
+
+# Or generate figures from pre-computed results
 python figures/generate_all.py
-# Figures saved to figures/output/
 ```
-
-### From scratch (full reproduction, ~24h)
-```bash
-python experiments/run_all.py --output results/
-python figures/generate_all.py --input results/
-```
-
-### Verify numbers match paper
-```bash
-python tests/test_audit.py
-# Checks all 20 key numerical claims against JSON data
-```
-
-## Key Results
-
-| Metric | Value |
-|--------|-------|
-| Scenario I Fixed PoAtt (gamma=0.3) | 1.046 |
-| Trust-Induced Attenuation | 91-94% (gamma in [0.3, 1.0]) |
-| Hidden vulnerability window | 73 days |
-| CAV dual effect (fixed) | +0.40 pp per 10% CAV |
-| CAV dual effect (dynamic) | -0.07 pp per 10% CAV |
-| Recovery fit | slope=0.289, R^2=0.989 |
 
 ## Networks
 
-- **Sioux Falls**: 24 nodes, 76 links, 528 OD pairs, 6180 paths (primary)
-- **Anaheim**: 416 nodes, 914 links, 1406 OD pairs, 30719 paths (validation)
+- **Sioux Falls**: 24 nodes, 76 links, 528 OD pairs (primary)
+- **Anaheim**: 416 nodes, 914 links, 1,406 OD pairs (validation)
 
 ## Citation
 
@@ -120,4 +88,4 @@ python tests/test_audit.py
 
 ## License
 
-This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
