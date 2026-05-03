@@ -1,0 +1,1 @@
+{"baseline_converged": 27896.772342030883, "gamma": 0.7, "scenarios": {"bc_defl_fixed": {"sustained_poatt": 1.1452812154125196, "peak_poatt": 1.3010625410968193, "trust_recovery": 0}, "bc_defl_dynamic": {"sustained_poatt": 1.021538579130831, "peak_poatt": 1.1989771719683533, "trust_recovery": 67}}}

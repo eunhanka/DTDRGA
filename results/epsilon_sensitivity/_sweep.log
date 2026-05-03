@@ -1,0 +1,48 @@
+Baseline converged TSTT: 6709.06; baseline all: 6874.28
+Grid: epsilon_h = [0.05, 0.1, 0.15], gamma = [0.1, 0.3, 0.5, 0.7, 0.9, 1.0]
+  [reuse] fixed gamma=0.1 from exp_g_0.1_fixed.json
+  [reuse] fixed gamma=0.3 from exp_g_0.3_fixed.json
+  [reuse] fixed gamma=0.5 from exp_g_0.5_fixed.json
+  [reuse] fixed gamma=0.7 from exp_g_0.7_fixed.json
+  [reuse] fixed gamma=0.9 from exp_g_0.9_fixed.json
+  [reuse] fixed gamma=1.0 from exp_g_1.0_fixed.json
+
+[error capture] running 1 sim per gamma to record day-51 error...
+    gamma=0.1 elapsed 305s err51=53.6047844162129; completed 1/18
+    gamma=0.3 elapsed 302s err51=160.8143532486387; completed 2/18
+    gamma=0.5 elapsed 314s err51=268.0239220810645; completed 3/18
+    gamma=0.7 elapsed 285s err51=375.23349091349024; completed 4/18
+    gamma=0.9 elapsed 291s err51=482.4430597459161; completed 5/18
+    gamma=1.0 elapsed 296s err51=536.047844162129; completed 6/18
+  [run] dynamic eps=0.05 gamma=0.1
+    elapsed 297s; total 2090s, ETA 3284s; completed 7/18, failed 0
+  [run] dynamic eps=0.05 gamma=0.3
+    elapsed 298s; total 2388s, ETA 2985s; completed 8/18, failed 0
+  [run] dynamic eps=0.05 gamma=0.5
+    elapsed 299s; total 2687s, ETA 2687s; completed 9/18, failed 0
+  [run] dynamic eps=0.05 gamma=0.7
+    elapsed 295s; total 2982s, ETA 2386s; completed 10/18, failed 0
+  [run] dynamic eps=0.05 gamma=0.9
+    elapsed 306s; total 3288s, ETA 2092s; completed 11/18, failed 0
+  [run] dynamic eps=0.05 gamma=1.0
+    elapsed 301s; total 3589s, ETA 1794s; completed 12/18, failed 0
+  [reuse] dynamic eps=0.1 gamma=0.1
+  [reuse] dynamic eps=0.1 gamma=0.3
+  [reuse] dynamic eps=0.1 gamma=0.5
+  [reuse] dynamic eps=0.1 gamma=0.7
+  [reuse] dynamic eps=0.1 gamma=0.9
+  [reuse] dynamic eps=0.1 gamma=1.0
+  [run] dynamic eps=0.15 gamma=0.1
+    elapsed 300s; total 3889s, ETA 1496s; completed 13/18, failed 0
+  [run] dynamic eps=0.15 gamma=0.3
+    elapsed 307s; total 4196s, ETA 1199s; completed 14/18, failed 0
+  [run] dynamic eps=0.15 gamma=0.5
+    elapsed 314s; total 4511s, ETA 902s; completed 15/18, failed 0
+  [run] dynamic eps=0.15 gamma=0.7
+    elapsed 316s; total 4827s, ETA 603s; completed 16/18, failed 0
+  [run] dynamic eps=0.15 gamma=0.9
+    elapsed 311s; total 5138s, ETA 302s; completed 17/18, failed 0
+  [run] dynamic eps=0.15 gamma=1.0
+    elapsed 301s; total 5439s, ETA 0s; completed 18/18, failed 0
+
+Sweep done in 5439s (90.7 min). Failures: 0/18

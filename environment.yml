@@ -1,0 +1,12 @@
+name: dtd-rga
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.24,<2
+  - scipy>=1.10
+  - networkx>=3.0
+  - matplotlib>=3.7
+  - pip:
+    - scipy
