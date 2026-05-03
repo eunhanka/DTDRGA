@@ -106,6 +106,20 @@ as well as gamma=0.3 trust-asymmetry variants. They are kept for
 reproducibility of supplementary analyses and follow-up research; they are
 not referenced from the manuscript body.
 
+## Data attribution
+
+The Sioux Falls and Anaheim network data in `data/` were downloaded from the
+DrKeHan/DTA repository accompanying:
+
+> Han, K., Eve, G., Friesz, T. L. (2019). Computing dynamic user equilibria on
+> large-scale networks with software implementation. *Networks and Spatial
+> Economics*, 19(3), 869–902. DOI: [10.1007/s11067-018-9433-y](https://doi.org/10.1007/s11067-018-9433-y).
+
+Source repository: <https://github.com/DrKeHan/DTA>
+
+If you use these network data in your own work, please cite Han et al. (2019).
+See [`data/README.md`](data/README.md) for full attribution and usage notice.
+
 ## Citation
 
 If you use this code or data in your research, please cite:
