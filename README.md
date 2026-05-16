@@ -5,7 +5,7 @@ network resilience under route-guidance misinformation.
 
 **Paper**: Ka, E. & Ukkusuri, S.V. (2026). *Day-to-Day Traffic Network Modeling
 under Route-Guidance Misinformation: Endogenous Trust and Resilience in CAV
-Environments*. IEEE Trans. on Intelligent Transportation Systems.
+Environments*. Under review (IEEE Trans. on Intelligent Transportation Systems).
 
 ## Quick Start
 
